@@ -1,0 +1,6 @@
+total 16
+-rwxrw-r-- 1 baptiste baptiste   79 sept. 27 18:09 exo1.sh
+-rwxrw-r-- 1 baptiste baptiste   46 sept. 27 18:11 exo2.sh
+-rw-rw-r-- 1 baptiste baptiste    0 sept. 27 18:12 Permissions.txt
+drwxrwxr-x 2 baptiste baptiste 4096 sept. 27 18:07 test
+-rw-rw-r-- 1 baptiste baptiste  183 sept. 27 18:10 test.txt
