@@ -1,6 +1,7 @@
+//Teste la validité d'une date
 #include <iostream>
 
-void askUser(std::string thing, unsigned int& a) {
+void askUser(std::string thing, unsigned int& a) { //Demande à l'utilisateur
     std::cout << thing << "?> ";
     std::cin >> a;
 }

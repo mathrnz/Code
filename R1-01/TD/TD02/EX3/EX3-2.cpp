@@ -1,3 +1,4 @@
+//Demande la date de naissance et la date du jour, indique si la personne est majeure ou non
 #include <iostream>
 
 void askUser(std::string thing, unsigned int& a) {

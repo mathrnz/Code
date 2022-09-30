@@ -1,6 +1,6 @@
 #include <iostream>
 
-void permute(char& _c1, char& _c2) {
+void permute(char& _c1, char& _c2) { //Échange deux variables
     char ctemp;
     _c1 = ctemp;
     _c1 = _c2;

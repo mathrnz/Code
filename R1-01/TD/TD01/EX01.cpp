@@ -1,3 +1,4 @@
+//Demande et affiche l'heure (heure, minutes, secondes)
 #include <iostream>
 
 int main() {

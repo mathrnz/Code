@@ -1,3 +1,4 @@
+//Demande et affiche le nom et l'age
 #include <iostream>
 
 int main() {

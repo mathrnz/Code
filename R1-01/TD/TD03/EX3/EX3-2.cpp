@@ -1,3 +1,4 @@
+//Triangle rectangle en charactère *
 #include <iostream>
 
 void triangleRectangle(int L) {

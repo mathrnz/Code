@@ -1,3 +1,4 @@
+//Rectangle en charactère *
 #include <iostream>
 
 void rectangle(int l, int L) {

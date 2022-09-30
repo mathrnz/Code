@@ -1,3 +1,4 @@
+//Indique si le nombre est nul, positif ou négatif
 #include <iostream>
 
 void ask(int& input) {
