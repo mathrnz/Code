@@ -1,5 +1,5 @@
 #include <iostream>
-#include "../../include/commonthings.hpp"
+#include "../../include/CommonThings/commonthings.hpp"
 
 void printFibonacci(unsigned int n) {
     const unsigned int F0 = 0;
@@ -26,6 +26,6 @@ void printFibonacci(unsigned int n) {
 
 int main() {
     unsigned int n;
-    commonthings::askUser(n, "Fibonnacci à n éléments, n?");
+    commonthings::userinput::askUser(n, "Fibonnacci à n éléments, n?");
     printFibonacci(n);
 }

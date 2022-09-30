@@ -1,7 +1,8 @@
-#include "../../include/commonthings.hpp"
+#include "../../include/CommonThings/commonthings.hpp"
 #include <iostream>
 
 namespace ct = commonthings;
+namespace ui = commonthings::userinput;
 
 void syracuse(unsigned int n, unsigned int& ft,unsigned int& max) {
     do {
@@ -19,7 +20,7 @@ void syracuse(unsigned int n, unsigned int& ft,unsigned int& max) {
 
 int main() {
     unsigned int nb;
-    ct::askUser(nb, "Choissir une nombre");
+    ct::userinput::askUser(nb, "Choissir une nombre");
 
     unsigned int ft = 0, max=0;
     syracuse(nb, ft, max);
