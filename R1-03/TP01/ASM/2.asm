@@ -1,7 +1,0 @@
-LOAD A
-ADD B
-ADD C
-ADD D
-ADD E
-ADD F
-MOV G
