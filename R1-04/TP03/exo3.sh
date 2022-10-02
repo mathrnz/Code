@@ -10,7 +10,7 @@ do
 		break
 	fi
 
-	ls $rep &> /dev/null #0 si le répertoire $?
+	ls $rep &> /dev/null #0 si le répertoire existe $?
 
 	if [ $? != 0 ] #Test existence répertoire
 	then
