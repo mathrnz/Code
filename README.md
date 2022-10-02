@@ -1,3 +1,5 @@
+<img src="https://zupimages.net/up/22/39/y5qc.png" width="200" height="200" />
+
 # Code des ressources R1.01, R1.02, R1.03 et R1.04.
 **L'ensemble du code présent dans ce repo est sous licence GNU GPLv3**<br/>
 C'est avec plaisir que j'accepterai vos pull request si vous avez des améliorations à proposer.
