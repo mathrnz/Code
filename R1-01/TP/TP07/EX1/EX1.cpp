@@ -9,7 +9,7 @@ int main() {
     std::default_random_engine random;
     random.seed(std::chrono::high_resolution_clock::now().time_since_epoch().count());
 
-    //const double points = 100000;
+    const double points = 1000;
     double pointsInside = 0;    
 
     geometry::point center;
@@ -19,7 +19,7 @@ int main() {
     circle.center = center;
     circle.radius = 1;
 
-/*    for (int i=0; i<points; i++) {
+    for (int i=0; i<points; i++) {
         geometry::point point;
         point.x = gen(random);
         point.y = gen(random);
@@ -29,9 +29,9 @@ int main() {
     }
 
         double pi = 4*(pointsInside/points);   
-        std::cout << "pi = " << pi << std::endl;*/
+        std::cout << "pi = " << pi << std::endl;
 
-    double points = 0;
+    /*double points = 0;
     while (true) {
         geometry::point point;
         point.x = gen(random);
@@ -44,5 +44,5 @@ int main() {
 
         double pi = 4*(pointsInside/points); 
         std::cout << "pi =" << pi << std::endl;
-    }
+    }*/
 }
