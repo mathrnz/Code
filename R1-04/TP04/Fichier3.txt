@@ -1,0 +1,5 @@
+Ce fichier est le troisième fichier que nous
+allons utiliser pour faire les tests dans
+l'exercice 1 du TP4. Il va contenir d'autres
+mots qui ne sont pas contenus dans le premier
+fichier ou dans le deuxième fichier.  
