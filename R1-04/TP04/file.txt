@@ -1,0 +1,3 @@
+Ce fiChier est le premier fiChier que
+nous allons utiliser pour faire les
+tests dans l'exerCiCe 1 du TP4.
