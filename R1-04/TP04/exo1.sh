@@ -21,7 +21,13 @@ do
 	fi
 
 	shift
-	countarg=$(($countchain + 1 ))
+	countarg=$(($countarg + 1 ))
 done
-
 echo $countchain "Chars correspondants"
+
+ratio=$((($countchain / $countarg)*100))
+
+if [ $ratio -ge 50 ]
+then
+	echo "Au moins la moitié des fichiers fournis contiennent la chaine de caractère"
+fi	
