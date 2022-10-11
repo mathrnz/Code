@@ -1,0 +1,4 @@
+FichierA.txt 103
+FichierB.txt 200
+FichierC.txt 291
+FichierD.txt 383
