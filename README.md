@@ -4,4 +4,15 @@
 **L'ensemble du code présent dans ce repo est sous licence GNU GPLv3**<br/>
 C'est avec plaisir que j'accepterai vos pull request si vous avez des améliorations à proposer.
 
-**Si vous utilisez du code présent sur ce repo, n'oubliez pas la licence GNU GPLv3 : citez cette source !**
+Le but premier de ce repo est de permettre à chaque élève de la promo d'avoir accès à une "correction" proposée par d'autres élèves, ainsi il est nécessaire que plusieurs d'entre vous propose des pull request afin de faire varier les styles de programmation.
+
+**Si vous ne savez pas comment participer au repo**, ne vous inquiétez pas, c'est très simple, il faut :
+
+    1. Forker le projet, en cliquant sur le bouton Fork.
+    2. Créer ou modifier un fichier (dans votre repository)
+    3. Créer une pull request : les auteurs du logiciel pourront analyser vos modifications et les accepter (ou pas)
+
+
+**Si vous souhaitez utiliser du code présent sur ce repo, n'oubliez pas la licence GNU GPLv3 : citez cette source !**
+
+Les fichiers `.o`, `.app` et `.exe` sont ignorés par git (voir .gitignore), de ce fait, la compilation est laissée comme exercice pour le lecteur.
