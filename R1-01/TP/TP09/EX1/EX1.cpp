@@ -1,3 +1,5 @@
+//Usage : ./exectuble <valeurs.txt
+
 #include <iostream>
 #include "../../../includes/CommonThings/commonthings.hpp"
 

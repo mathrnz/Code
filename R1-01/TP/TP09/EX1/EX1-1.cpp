@@ -1,3 +1,5 @@
+//Usage : ./exectuble <valeurs.txt
+
 #include <iostream>
 
 void printTab(double tab[], size_t size) {
