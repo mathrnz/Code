@@ -1,0 +1,119 @@
+html{
+    overflow: hidden;
+}
+
+form {
+    background-color: lightgrey;
+    padding: 1em;
+    width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: left;
+    box-shadow: 10px 5px 10px rgb(151, 151, 151);
+    border-radius: 5px;
+}
+
+input {
+    margin-bottom: 4px;
+}
+
+label {
+    display : inline-block;
+    width : 100px;
+    font-size : 90%;
+}
+
+textarea{
+    min-width: 400px;
+    max-width: 400px;
+}
+
+fieldset {
+   padding-top: 1em;
+   margin-bottom: 1em;
+   border: 1px solid black;
+}
+
+legend{
+    font-weight: bold;
+    font-size: 80%;
+}
+
+input:required{
+    background-color: rgb(255, 150, 150);
+}
+
+input:focus{
+    background-color: rgb(255, 255, 150);
+}
+
+textarea:focus{
+    background-color: rgb(255, 255, 150);
+}
+
+
+
+body {
+    margin:0;
+}
+  
+p {
+    font-family: 'Lato', sans-serif;
+    letter-spacing: 1px;
+    font-size:14px;
+    color: #333333;
+}
+
+.header {
+    position:relative;
+    text-align:center;
+    background: linear-gradient(60deg, rgba(84,58,183,1) 0%, rgba(0,172,193,1) 100%);
+    color:white;
+}
+
+.inner-header {
+    height:90%;
+    width:100%;
+    margin: 0;
+    padding: 0;
+}
+  
+.waves {
+    position:relative;
+    width: 100%;
+    height:10vh;
+    margin-bottom:-7px; /*Fix for safari gap*/
+    min-height:100px;
+    max-height:150px;
+}
+
+
+/* Animation */
+
+.parallax > use {
+    animation: move-forever 25s cubic-bezier(.55,.5,.45,.5)     infinite;
+}
+.parallax > use:nth-child(1) {
+    animation-delay: -2s;
+    animation-duration: 7s;
+}
+.parallax > use:nth-child(2) {
+    animation-delay: -3s;
+    animation-duration: 10s;
+}
+.parallax > use:nth-child(3) {
+    animation-delay: -4s;
+    animation-duration: 13s;
+}
+.parallax > use:nth-child(4) {
+    animation-delay: -5s;
+    animation-duration: 20s;
+}
+@keyframes move-forever {
+0% {
+    transform: translate3d(-90px,0,0);
+}
+100% { 
+    transform: translate3d(85px,0,0);
+}
+}

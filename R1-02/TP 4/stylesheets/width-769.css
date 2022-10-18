@@ -1,0 +1,53 @@
+@media screen and (min-width: 769px) {
+	body {
+		background-image: url("../assets/background.jpg");
+		background-repeat: repeat-y;
+		background-position: center;
+	}
+	
+	#banniere {
+		height: 211px;
+		background-image: url("../assets/banniere.jpg");
+	}
+
+	#banniere h1 {
+		size: 300%;
+		margin: 0;
+		color: white;
+		text-align: center;
+		line-height: 211px;
+	}
+	section {
+		width: 75%;
+	}
+	
+	article {
+		margin: 1em;
+		padding: 1em;
+	}
+	article header {
+		padding: 1em;
+	}
+	article footer {
+		padding: 1em;
+	}
+	article aside {
+		margin-right: 3em;
+		margin-left: 3em;
+		margin-top: 1em;
+		margin-bottom: 1em;
+		padding: 1em;
+	}
+	
+	#menu #umenu {
+		list-style-type: none;
+		background-color: #fbff3c;
+		overflow: hidden;
+	}
+
+	#menu li {
+		float: left;
+		display: block;
+		margin:auto;
+	}
+}

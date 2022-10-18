@@ -1,0 +1,70 @@
+@media screen and (max-width: 480px) {
+	body {
+		background-color: black;
+	}
+	
+	#banniere {
+		height: 211px;
+		background-color: black;
+	}
+
+	#banniere h1 {
+		size: 200%;
+		margin: 0;
+		color: white;
+		text-align: center;
+		line-height: 211px;
+	}
+	
+	article img {
+		float: none;
+		margin: auto;
+		max-width: 100%;
+		height: auto;
+	}
+	
+	#sidebar {
+		margin: 0.5em;
+	}
+	
+	.petit_ecran {
+		display: none;
+	}
+	
+	section {
+		width: 100%;
+	}
+	
+	article {
+		margin: 0.5em;
+		padding: 0.5em;
+	}
+	article header {
+		padding: 0.5em;
+	}
+	article footer {
+		padding: 0.5em;
+	}
+	article aside {
+		margin-right: 1.5em;
+		margin-left: 1.5em;
+		margin-top: 0.5em;
+		margin-bottom: 0.5em;
+		padding: 0.5em;
+	}
+	
+	
+	#menu #umenu {
+		list-style-type: none;
+		background-color: #fbff3c;
+		overflow: hidden;
+		padding: 0;
+	}
+
+
+	#menu li {
+		float: none;
+		display: block;
+		margin:auto;
+	}
+}

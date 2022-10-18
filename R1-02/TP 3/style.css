@@ -1,0 +1,159 @@
+* {
+	font-family: Tahoma, Geneva, sans-serif;
+}
+
+
+
+body {
+	background-image: url("./assets/background.jpg");
+	background-repeat: repeat-y;
+	background-position: center;
+}
+
+
+
+.page {
+	width: 900px;
+	margin: 0 auto;
+}
+
+
+
+#banniere {
+	height: 211px;
+	background-image: url("./assets/banniere.jpg");
+}
+
+#banniere h1 {
+	size: 300%;
+	margin: 0;
+	color: white;
+	text-align: center;
+	line-height: 211px;
+}
+
+
+
+#menu #umenu {
+	list-style-type: none;
+	background-color: #fbff3c;
+	overflow: hidden;
+}
+
+#menu li {
+	float: left;
+	/* border-right: 2px solid #000; */
+	display: block;
+	margin:auto;
+}
+
+#menu li:last-child {
+    border-right: none;
+}
+
+#menu li a {
+	color: #000;
+	text-decoration: none;
+	display: block;
+	padding: 10px 34px;
+	text-align: center;
+}
+
+
+#menu li a:hover {
+	color: #FFF;
+	background-color: #000;
+}
+
+
+#d_films {
+	display: none;
+}
+#d_countries {
+	display: none;
+}
+
+#menu #films:hover > #d_films {
+	display: block;
+	line-height: 30px;
+	text-align: center;
+}
+
+#menu #réals:hover > #d_countries {
+	display: block;
+	line-height: 30px;
+	text-align: center;
+	
+}
+
+
+
+#sidebar{
+	float: right;
+	width: 23%;
+	margin-top: 1em;
+	background-color: black;
+	color: white;
+}
+#sidebar img {
+	width: 70%;
+	height: 80%;
+}
+
+
+
+section {
+	float: left;
+	width: 75%;
+	margin-bottom: 50px;
+}
+
+
+
+article {
+	margin-top: 1em;
+	padding: 1em;
+	background-color: white;
+}
+
+article h2 {
+	size: 160%;
+}
+
+article header {
+	padding: 1em;
+	background-color: yellow;
+	color: black;
+}
+
+article footer {
+	padding: 1em;
+	background-color: lightgray;
+	color: black;
+}
+
+article img {
+	float: left;
+	margin: 1em;
+	height: 200px;
+}
+
+article aside {
+	margin-right: 3em;
+	margin-left: 3em;
+	margin-top: 1em;
+	margin-bottom: 1em;
+	padding: 1em;
+	background-color: white;
+	border: 2px solid yellow;
+	font-style: italic;
+	font-size: 0.8em;
+	clear: both;
+}
+
+footer {
+	color: white;
+	font-size: 0.8em;
+	background-color: black;
+	clear: both;
+}
