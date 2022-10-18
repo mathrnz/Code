@@ -1,6 +1,6 @@
 #include <iostream>
 
-void azToQw(char strqw[200], char str[200]) {
+void azToQw(const char strqw[200], char str[200]) {
     for(size_t i=0; i<200; ++i) {
         str[i]=strqw[i];
         
