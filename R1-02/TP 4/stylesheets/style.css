@@ -1,0 +1,112 @@
+* {
+	font-family: Tahoma, Geneva, sans-serif;
+	box-sizing: border-box; /* Permet de prendre en compte le padding, les borders etc d'un élément dans sa taille.*/
+}
+p {
+	hyphens: auto;  /*Applique un  lorsque le texte dépasse la taille disponible, pour retourner à la ligne */
+	word-wrap : break-word; /* Fait des césures entre les mots si celui-ci */
+	overflow-wrap : break-word; /* Dépasse la box/div dans laquelle il est */
+}
+
+.page {
+	max-width: 900px;
+	margin: 0 auto;
+}
+
+
+section {
+	float: left;
+	margin-bottom: 50px;
+}
+
+
+article {
+	background-color: white;
+}
+
+article h2 {
+	size: 160%;
+}
+
+article header {
+	background-color: yellow;
+	color: black;
+}
+
+article footer {
+	background-color: lightgray;
+	color: black;
+}
+
+
+#sidebar{
+	float: right;
+	width: 23%;
+	background-color: black;
+	color: white;
+}
+#sidebar img {
+	width: 70%;
+	height: 80%;
+}
+
+
+article aside {
+	background-color: white;
+	border: 2px solid yellow;
+	font-style: italic;
+	font-size: 0.8em;
+	clear: both;
+}
+
+
+footer {
+	color: white;
+	font-size: 0.8em;
+	background-color: black;
+	clear: both;
+}
+
+
+
+#menu li:last-child {
+    border-right: none;
+}
+
+#menu li a {
+	color: #000;
+	text-decoration: none;
+	display: block;
+	padding: 8px;
+	text-align: center;
+}
+
+
+#menu li a:hover {
+	color: #FFF;
+	background-color: #000;
+}
+
+#d_films {
+	display: none;
+}
+#d_countries {
+	display: none;
+}
+
+#menu #films:hover > #d_films {
+	display: block;
+	line-height: 30px;
+	text-align: center;
+}
+
+#menu #réals:hover > #d_countries {
+	display: block;
+	line-height: 30px;
+	text-align: center;
+	
+}
+
+
+
+
