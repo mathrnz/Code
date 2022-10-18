@@ -10,7 +10,7 @@ Le but premier de ce repo est de permettre à chaque élève de la promo d'avoir
 
     1. Forker le projet, en cliquant sur le bouton Fork.
     2. Créer ou modifier un fichier (dans votre repository)
-    3. Créer une pull request : les auteurs du logiciel pourront analyser vos modifications et les accepter (ou pas)
+    3. Créer une pull request : je pourrai analyser vos modifications et les accepter (ou pas)
 
 
 **Si vous souhaitez utiliser du code présent sur ce repo, n'oubliez pas la licence GNU GPLv3 : citez cette source !**
