@@ -1,6 +1,6 @@
 # Code de la ressource R1.04
 
-**Toute pull request est la bienvenue**, les exercices ne sont pas des corrections mais des "réponses justes" de ce fait, votre réponsé l'est aussi et vous pouvez contribuer en l'ajoutant. Un guide rapide pour ajouter votre code est disponible sur la page d'acceuil.
+**Toute pull request est la bienvenue**, les exercices ne sont pas des corrections mais des "réponses justes" de ce fait, votre réponsé l'est aussi et vous pouvez contribuer en l'ajoutant. Un guide rapide pour ajouter votre code est disponible sur la page d'accueil.
 
 <br/>
 
