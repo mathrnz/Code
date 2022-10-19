@@ -1,4 +1,5 @@
 #include "String.hpp"
+#include <cstring>
 
 void CreateString(String & str, const size_t size=256) {
     str.allocated_size = size;
@@ -44,4 +45,36 @@ void DestroyString(String & str) {
     delete[] str.buffer;
     str.buffer = nullptr;
     str.allocated_size = 0;
+}
+
+void GrowString(String & str, size_t newSize) {
+    if(newSize <= str.allocated_size) return;
+
+    char* tmp_buffer = new char[newSize]; //tableau temporaire, à la bonne taille.
+    char *p1=str.buffer, *p2=tmp_buffer;
+    while(*p1 != '\0') //Jusqu'à la fin du "string"
+        *p2++=*p1++;
+
+    delete[] str.buffer;
+    str.buffer = tmp_buffer;
+    str.allocated_size = newSize;
+}
+
+void AssignString(String & str, const char *ptr) {
+    GrowString(str, strlen(ptr)+1);
+    char *pc = str.buffer;
+    while(*ptr != '\0')
+        *pc++=*ptr++;
+}
+
+void ConcatenateString(String & s1, String & s2) {
+    char *p1 = s1.buffer; //début string 1
+    while(*p1++ != '\0') //jusqu'à la fin du string
+        ;
+    p1--; //Corrige *p1++
+
+    const char *p2 = s2.buffer;
+    while(*p2 != '\0') //Jusqu'à la fin du string
+        *p1++ = *p2++;
+    *p1 = '\0'; //Fin du string
 }
