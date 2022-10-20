@@ -5,6 +5,7 @@ void ordonne3(double *pa, double *pb, double *pc) {
     double tmp=*pa;
     
     if(*pa < *pb && *pb < *pc)
+        //a b c
         return;
     else {
         if(*pb < *pa && *pa < *pc) {
