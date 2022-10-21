@@ -1,11 +1,11 @@
 #include <iostream>
 
-void askUser(std::string thing, unsigned int& a) {
+void askUser(std::string thing, unsigned int& a) { //Demande à l'utilisateur, passage par référence (int)
     std::cout << thing << "?> ";
     std::cin >> a;
 }
 
-bool biOrNot(int d) {
+bool biOrNot(int d) { //Vérifie si l'année est bissextile
     
     if (d%400 == 0)
         return true; //L'année est bissextile
@@ -17,7 +17,7 @@ bool biOrNot(int d) {
         return false;
 }
 
-void valid(int j, int m, int a) {
+void valid(int j, int m, int a) { //Vérifie si la date est valide
     unsigned int nbjours=0;
     if (m == 1 || m == 3 || m == 5 || m == 7 || m == 10 || m == 12) //Mois à 31 jours
         nbjours = 31;

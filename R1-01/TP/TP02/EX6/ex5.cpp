@@ -1,12 +1,12 @@
 #include "ex5.hpp"
 #include <iostream>
 
-void ex5::askUser(std::string things, double& a, char& b, double& c) {
+void ex5::askUser(std::string things, double& a, char& b, double& c) { //Demande à l'utilisateur, passage par référence (int)
     std::cout << things << " ?> ";
     std::cin >> a >> b >> c;
 }
 
-double ex5::calcul(double a, char b, double c) {
+double ex5::calcul(double a, char b, double c) { //Identifie l'opération à effecter à partir d'un char et l'effectue
     switch (b) {
         case '+':
             return a + c;

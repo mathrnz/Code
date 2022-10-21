@@ -1,7 +1,7 @@
 #include "ex4.hpp"
 #include <iostream>
 
-void ex4::askUser(std::string thing, unsigned int& a) {
+void ex4::askUser(std::string thing, unsigned int& a) { //Demande à l'utilisateur, passage par référence (int)
     std::cout << thing << "?> ";
     std::cin >> a;
 }
@@ -18,7 +18,7 @@ bool ex4::biOrNot(int d) {
         return false;
 }
 
-void ex4::valid(unsigned int j,unsigned int m,unsigned int a) {
+void ex4::valid(unsigned int j,unsigned int m,unsigned int a) { //Vérifie si la date est valide
     unsigned int nbjours=0;
     if (m == 1 || m == 3 || m == 5 || m == 7 || m == 10 || m == 12) //Mois à 31 jours
         nbjours = 31;

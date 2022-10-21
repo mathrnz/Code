@@ -3,8 +3,8 @@
 #include <string>
 
 namespace exo2 {
-    void askUser(std::string thing, int& a);
-    bool isInRange(int a, int b, int c);
+    void askUser(std::string thing, int& a); //Demande à l'utilisateur, passage par référence (int)
+    bool isInRange(int a, int b, int c); //Vérifie si c est compris en a et b ou b et a
     int prog();
 }
 

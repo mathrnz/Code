@@ -3,7 +3,7 @@
 #include <iostream>
 #include "../../../includes/CommonThings/commonthings.hpp"
 
-void printTab(int tab[], size_t size) {
+void printTab(int tab[], size_t size) { //Affiche les cases d'un tableau dans la sortie standard
     for(size_t i=0; i<size-1; ++i) {
         std::cout << tab[i] << ",";
     }

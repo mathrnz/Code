@@ -1,16 +1,16 @@
 #include <iostream>
 
-void askUser(double& n, std::string msg) {
+void askUser(double& n, std::string msg) { //Demande à l'utilisateur, passage par référence (double)
     std::cout << msg << "> ";
     std::cin >> n;
 }
 
-void askUser(int& n, std::string msg) {
+void askUser(int& n, std::string msg) { //Demande à l'utilisateur, passage par référence (int)
     std::cout << msg << "> ";
     std::cin >> n;
 }
 
-void askUser(unsigned int& n, std::string msg) {
+void askUser(unsigned int& n, std::string msg) { //Demande à l'utilisateur, passage par référence (unsigned int)
     std::cout << msg << "> ";
     std::cin >> n;
 }

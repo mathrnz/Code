@@ -1,11 +1,11 @@
 #include <iostream>
 
-void askUser(std::string thing, int& a) {
+void askUser(std::string thing, int& a) { //Demande à l'utilisateur, passage par référence (int)
     std::cout << thing << "?> ";
     std::cin >> a;
 }
 
-std::string posNegNul(int n) {
+std::string posNegNul(int n) { //Retourne si le nombre est nul, positif ou négatif
     if (n == 0)
         return "nul";
     if (n > 0)

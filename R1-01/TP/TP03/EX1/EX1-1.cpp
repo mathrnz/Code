@@ -1,6 +1,6 @@
 #include <iostream>
 
-void readDouble(double& nb, double i1, double i2) {
+void readDouble(double& nb, double i1, double i2) { //Demande à l'utlisateur un double qui ne sera accepté que s'il est compris entre i1 et i2
 	do {
 		std::cout << "Saisir un nombre entre " << i1 << " et " << i2 << "> ";
 		std::cin >> nb;

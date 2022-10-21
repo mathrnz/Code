@@ -1,7 +1,7 @@
 //Indique si le nombre est nul, positif ou négatif
 #include <iostream>
 
-void ask(int& input) {
+void ask(int& input) { //Demande à l'utilisateur
     std::cout << "Entrez un nombre> ";
     std::cin >> input;
 }

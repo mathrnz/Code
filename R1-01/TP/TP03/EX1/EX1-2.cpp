@@ -1,13 +1,13 @@
 #include <iostream>
 
-void readDouble(double& nb, double i1, double i2, std::string msg) {
+void readDouble(double& nb, double i1, double i2, std::string msg) { //Demande à l'utlisateur un double qui ne sera accepté que s'il est compris entre i1 et i2
 	do {
 		std::cout << msg << " entre "  << i1 << " et " << i2 << "> ";
 		std::cin >> nb;
 	} while ((nb < i1) || (nb > i2));
 }
 
-double moyPon(double n1, double n2, double n3, double c1, double c2, double c3) {
+double moyPon(double n1, double n2, double n3, double c1, double c2, double c3) { //Effectue la moyenne pondérée
 	double ctotal = c1 + c2 + c3;
 
 	n1 = n1 * c1;

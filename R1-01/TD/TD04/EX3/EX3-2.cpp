@@ -1,6 +1,6 @@
 #include <iostream>
 
-int getMin(const int tab[], size_t n) {
+int getMin(const int tab[], size_t n) { //Récupère la plus petite valeur d'un tableau
     int min=tab[0];
     for(size_t i=1; i<n; i++)
         if(tab[i]<min)

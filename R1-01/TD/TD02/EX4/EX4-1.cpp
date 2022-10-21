@@ -6,7 +6,7 @@ void askUser(std::string thing, unsigned int& a) { //Demande à l'utilisateur
     std::cin >> a;
 }
 
-void biOrNot(const int d) {
+void biOrNot(const int d) { //Teste si une année est bissextile ou pas
     
     if (d%400 == 0)
         std::cout << "L'année est bissextile." << std::endl;

@@ -1,6 +1,6 @@
 #include <iostream>
 
-void drawRectangle(unsigned int l, unsigned int L) {
+void drawRectangle(unsigned int l, unsigned int L) { //Dessine un rectangle de l sur L dans la sortie standard
     	for (int j=1; j <= l; j++) {
             for (int i=1; i <= L; i++) {
                 std::cout << "*";
@@ -9,7 +9,7 @@ void drawRectangle(unsigned int l, unsigned int L) {
 	}
 }
 
-void drawTriangle(unsigned int L) {
+void drawTriangle(unsigned int L) { //Dessine un triangle L sur la sortie standard
     for (int j=1; j <= L; j++) { //longueur
 		std::cout << "*";
 
@@ -21,12 +21,12 @@ void drawTriangle(unsigned int L) {
 	}
 }
 
-void askUser(unsigned int& n, std::string thing) {
+void askUser(unsigned int& n, std::string thing) { //Demande à l'utilisateur, passage par référence (unsigned int)
     std::cout << thing << "> ";
     std::cin >> n;
 }
 
-void menu(unsigned int& c) {
+void menu(unsigned int& c) { //Menu de sélection
         std::cout << "Choississez une option :" << std::endl
         << "1. Rectangle" << std::endl
         << "2. Triangle" << std::endl

@@ -1,12 +1,12 @@
 #include <iostream>
 #include <string>
 
-void ask(std::string thing, int& n) {
+void ask(std::string thing, int& n) { //Demande à l'utilisateur, passage par référence (int)
     std::cout << thing << " ?>";
     std::cin >> n;
 }
 
-void printHour(int h, int m, int s) {
+void printHour(int h, int m, int s) { //affiche l'heure
     std::cout << "Il est : " << h << ":" << m << ":" << s << std::endl;
 }
 

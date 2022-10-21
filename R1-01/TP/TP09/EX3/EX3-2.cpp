@@ -1,7 +1,7 @@
 #include <iostream>
 #include "../../../includes/CommonThings/commonthings.hpp"
 
-void ordonne3(double *pa, double *pb, double *pc) {   
+void ordonne3(double *pa, double *pb, double *pc) { //Ordonne a b et c dans l'ordre croissant
     double tmp=*pa;
     
     if(*pa < *pb && *pb < *pc)

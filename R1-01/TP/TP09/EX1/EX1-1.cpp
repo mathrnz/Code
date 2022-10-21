@@ -2,14 +2,14 @@
 
 #include <iostream>
 
-void printTab(double tab[], size_t size) {
+void printTab(double tab[], size_t size) { //Affiche un tableau dans la sortie standard
     for(size_t i=0; i<size-1; ++i) {
         std::cout << tab[i] << ",";
     }
     std::cout << tab[size-1] << "." << std::endl;
 }
 
-double moy(const double tab[], size_t size) {
+double moy(const double tab[], size_t size) { //Fais la moyenne des cases d'un tableau
     double sum=0;
     for(size_t i=0; i<size; ++i) {
         sum+=tab[i];

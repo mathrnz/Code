@@ -1,12 +1,12 @@
 #include "ex4-2.hpp"
 #include <iostream>
 
-void ex42::askUser(std::string thing, unsigned int& a) {
+void ex42::askUser(std::string thing, unsigned int& a) { //Demande à l'utilisateur, passage par référence (int)
     std::cout << thing << " ?> ";
     std::cin >> a;
 }
 
-bool ex42::bissextile(unsigned int an) {
+bool ex42::bissextile(unsigned int an) { //Vérifie si l'année est bissextile
     if (an%400 == 0)
         return true;
     else if (an%100 == 0)

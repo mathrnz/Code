@@ -4,7 +4,7 @@
 namespace ct = commonthings;
 namespace ui = commonthings::userinput;
 
-void syracuse(unsigned int n, unsigned int& ft,unsigned int& max) {
+void syracuse(unsigned int n, unsigned int& ft,unsigned int& max) { //Conjecture de collatz
     do {
         if (n%2 == 0)
             n = (n/2);

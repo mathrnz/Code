@@ -3,8 +3,8 @@
 #include <string>
 
 namespace ex42 {
-    void askUser(std::string thing, unsigned int& a);
-    bool bissextile(unsigned int an);
+    void askUser(std::string thing, unsigned int& a); //Demande à l'utilisateur, passage par référence (int)
+    bool bissextile(unsigned int an); //Vérifie si l'année est bissextile
     int prog();
 }
 

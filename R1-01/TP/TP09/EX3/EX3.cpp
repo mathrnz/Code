@@ -1,7 +1,7 @@
 #include <iostream>
 #include "../../../includes/CommonThings/commonthings.hpp"
 
-void echange2(double *pa, double *pb) {
+void echange2(double *pa, double *pb) { //Echange deux variables
     if(*pa > *pb) {
         double pc=*pa;
         *pa=*pb;

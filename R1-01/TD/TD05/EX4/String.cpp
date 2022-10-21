@@ -1,14 +1,14 @@
 #include "String.hpp"
 #include <cstring>
 
-void CreateString(String & str, const size_t size=256) {
+void CreateString(String & str, const size_t size=256) { //Crée un string de taille 256 par défaut
     str.allocated_size = size;
     str.buffer = new char[size];
     *str.buffer='\0';
     //str.buffer[0]='\0'; fait la même chose.
 }
 
-void DisplayString(const String & str) {
+void DisplayString(const String & str) { //Affiche le string
 
     //Toutes les boucles suivantes font la même chose.
 
@@ -27,7 +27,7 @@ void DisplayString(const String & str) {
     }
 }
 
-size_t StringLength(const String & str) {
+size_t StringLength(const String & str) { //Renvoie la taille du string ('\0' compris)
     size_t size=0;
     
     char* pc=str.buffer;
@@ -41,13 +41,13 @@ size_t StringLength(const String & str) {
     return size_t(size);*/
 }
 
-void DestroyString(String & str) {
+void DestroyString(String & str) { //Supprime le string
     delete[] str.buffer;
     str.buffer = nullptr;
     str.allocated_size = 0;
 }
 
-void GrowString(String & str, size_t newSize) {
+void GrowString(String & str, size_t newSize) { //Agrandi le string (copie temporaire, suppression de l'ancien et modification du pointeur)
     if(newSize <= str.allocated_size) return;
 
     char* tmp_buffer = new char[newSize]; //tableau temporaire, à la bonne taille.
@@ -60,14 +60,14 @@ void GrowString(String & str, size_t newSize) {
     str.allocated_size = newSize;
 }
 
-void AssignString(String & str, const char *ptr) {
+void AssignString(String & str, const char *ptr) { //Assigne un tableau de char au string
     GrowString(str, strlen(ptr)+1);
     char *pc = str.buffer;
     while(*ptr != '\0')
         *pc++=*ptr++;
 }
 
-void ConcatenateString(String & s1, String & s2) {
+void ConcatenateString(String & s1, String & s2) { //Ajoute deux strings
     char *p1 = s1.buffer; //début string 1
     while(*p1++ != '\0') //jusqu'à la fin du string
         ;
