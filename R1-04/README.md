@@ -1,11 +1,7 @@
 <p align="center">
-    <img src="R1-04.png" width="200">
+    <img src="R1-04.png" width="200"/>
+    <h1 align="center">Code de la ressource R1-04</h1>
 </p>
-
-<center>
-
-# Code de la ressource R1.04
-</center>
 
 **Toute pull request est la bienvenue**, les exercices ne sont pas des corrections mais des "réponses justes" de ce fait, votre réponsé l'est aussi et vous pouvez contribuer en l'ajoutant. Un guide rapide pour ajouter votre code est disponible sur la page d'accueil.
 

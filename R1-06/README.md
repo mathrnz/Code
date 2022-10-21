@@ -1,10 +1,7 @@
 <p align="center">
-    <img src="R1-06.png" width="200">
+    <img src="R1-06.png" width="200"/>
+    <h1 align="center">Code de la ressource R1-06</h1>
 </p>
-<center>
-
-# Code de la ressource R1.06
-</center>
 
 **Toute pull request est la bienvenue**, j'accecpterai avec plaisir vos version des programmes demandés dans cette ressource.
 

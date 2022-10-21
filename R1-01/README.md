@@ -1,11 +1,7 @@
 <p align="center">
     <img src="R1-01.png" width="200"/>
+    <h1 align="center">Code de la ressource R1-01</h1>
 </p>
-
-<center>
-
-# Code de la ressource R1.01
-</center>
 
 **Si vous avez de meilleurs solutions pour les exercices (ce qui est très probable ^^) n'hésitez pas à me faire une pull request !**
 
@@ -20,4 +16,3 @@ Les programmes incluant la librairie commonthings.hpp doivent être complilés e
 $ g++ -o output.app input.o ../../../includes/CommonThings/commonthings.o
 ```
 Le reste des programme est à compiler normalement.
-
