@@ -1,5 +1,8 @@
-<center>
+<p align="center">
     <img src="R1-04.png" width="200">
+</p>
+
+<center>
 
 # Code de la ressource R1.04
 </center>

@@ -1,5 +1,8 @@
+<p align="center">
+    <img src="https://zupimages.net/up/22/39/y5qc.png" width="200" height="200" />
+</p>
+
 <center>
-<img src="https://zupimages.net/up/22/39/y5qc.png" width="200" height="200" />
 
 # Code des ressources R1-01, R1-02, R1-04 et R1-06
 </center>
