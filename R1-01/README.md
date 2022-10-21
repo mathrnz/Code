@@ -1,4 +1,8 @@
+<center>
+    <img src="R1-01.png" width="200"/>
+    
 # Code de la ressource R1.01
+</center>
 
 **Si vous avez de meilleurs solutions pour les exercices (ce qui est très probable ^^) n'hésitez pas à me faire une pull request !**
 
