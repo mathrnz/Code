@@ -1,11 +1,11 @@
 #include <iostream>
 
-void askUser(std::string things, double& a, char& b, double& c) {
+void askUser(std::string things, double& a, char& b, double& c) { //Demande à l'utilisateur, passage par référence (int)
     std::cout << things << " ?> ";
     std::cin >> a >> b >> c;
 }
 
-double calcul(double a, char b, double c) {
+double calcul(double a, char b, double c) { //Identifie l'opération à effecter à partir d'un char et l'effectue
     switch (b) {
         case '+':
             return a + c;

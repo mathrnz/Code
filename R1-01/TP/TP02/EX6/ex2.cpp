@@ -1,12 +1,12 @@
 #include <iostream>
 #include "ex2.hpp"
 
-void exo2::askUser(std::string thing, int& a) {
+void exo2::askUser(std::string thing, int& a) { //Demande à l'utilisateur, passage par référence (int)
     std::cout << thing << " ?> ";
     std::cin >> a;
 }
 
-bool exo2::isInRange(int a, int b, int c) {
+bool exo2::isInRange(int a, int b, int c) { //Vérifie si c est compris en a et b ou b et a
     if ( ((c >= a) && (c <= b)) || ((c >= b) && (c <= a)))
         return true;
     else

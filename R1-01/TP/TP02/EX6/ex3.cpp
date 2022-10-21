@@ -1,12 +1,12 @@
 #include <iostream>
 #include "ex3.hpp"
 
-void ex3::askUser(std::string thing, int& a) {
+void ex3::askUser(std::string thing, int& a) { //Demande à l'utilisateur, passage par référence (int)
 	std::cout << thing << " ?> ";
 	std::cin >> a;
 }
 
-bool ex3::minMaj(unsigned int jn, unsigned int mn, unsigned int an, unsigned int j, unsigned int m, unsigned int a) {
+bool ex3::minMaj(unsigned int jn, unsigned int mn, unsigned int an, unsigned int j, unsigned int m, unsigned int a) { //Vérifie si l'utilisateur est majeu ou mineur
 	if (a - an < 18)
 		return false;
 	else if (a - an > 18)

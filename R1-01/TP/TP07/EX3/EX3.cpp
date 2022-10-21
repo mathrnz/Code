@@ -6,7 +6,7 @@ void printTab(const int tab[], size_t n) { //Attention, cet algo nécessite deux
     std::cout << tab[n-1] << "." << std::endl;
 }
 
-int getMin(const int tab[], size_t n) {
+int getMin(const int tab[], size_t n) { //Récupère le minimum dans un tableau
     int min=tab[0];
     for(size_t i=1; i<n; i++)
         if(tab[i]<min)
@@ -15,7 +15,7 @@ int getMin(const int tab[], size_t n) {
     return min;
 }
 
-double moy_Tab(const int tab[], size_t n) {
+double moy_Tab(const int tab[], size_t n) { //Fait la moyenne des nombres d'un tableau
     double somme=0;
     for(size_t i=0; i<n; i++)
         somme+=tab[i];
@@ -23,17 +23,17 @@ double moy_Tab(const int tab[], size_t n) {
     return somme/n;
 }
 
-int popBack(int tab[], size_t& n) {
+int popBack(int tab[], size_t& n) { //Retire la dernière case d'un tableau
     return tab[--n];
 }
 
-int popFront(int tab[], size_t& n) {
+int popFront(int tab[], size_t& n) { //Retire la première case d'un tableau
     for(size_t i=1; i<n; i++)
         tab[i-1]=tab[i];
     return tab[--n];
 }
 
-void removeZero(int val[], size_t& size) {
+void removeZero(int val[], size_t& size) { //Retire les 0 d'un tableau
     size_t write = 0;
     for (size_t read=0; read<size; read++) {
         if(val[read] == 0)

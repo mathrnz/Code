@@ -6,7 +6,7 @@ void askUser(std::string thing, unsigned int& a) { //Demande à l'utilsateur
     std::cin >> a;
 }
 
-void minorMajor(int a) {
+void minorMajor(int a) { //Test mineur ou majeur
     if (a >= 18)
         std::cout << "Vous êtes majeur !";
     else

@@ -1,7 +1,7 @@
 #include <iostream>
 #include "../../../includes/CommonThings/commonthings.hpp"
 
-void printFibonacci(unsigned int n) {
+void printFibonacci(unsigned int n) { //Affiche n termes de la suite de Fibonacci
     const unsigned int F0 = 0;
     const unsigned int F1 = 1;
 

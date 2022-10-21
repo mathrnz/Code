@@ -1,7 +1,7 @@
 //Triangle rectangle en charactère *
 #include <iostream>
 
-void triangleRectangle(int L) {
+void triangleRectangle(int L) { //Dessine un triangle rectangle de longeur L dans la sortie standard
 
 	for (int j=1; j <= L; j++) { //longueur
 		std::cout << "*";

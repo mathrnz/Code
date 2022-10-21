@@ -1,13 +1,13 @@
 //Demande la date de naissance et la date du jour, indique si la personne est majeure ou non
 #include <iostream>
 
-void askUser(std::string thing, unsigned int& a) {
+void askUser(std::string thing, unsigned int& a) { //demande à l'utilisateur, passage par référence
     std::cout << thing << "?> ";
     std::cin >> a;
 }
 
 
-void minorMajor(unsigned int jN, unsigned int mN, unsigned aN, unsigned int j, unsigned int m, unsigned int a) {
+void minorMajor(unsigned int jN, unsigned int mN, unsigned aN, unsigned int j, unsigned int m, unsigned int a) { //Test mineur ou majeur
     if (a - aN >= 18)
         if (m - mN >= 0)
             if (j - jN >= 0)

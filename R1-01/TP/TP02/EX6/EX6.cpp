@@ -7,7 +7,7 @@
 #include "ex4-2.hpp"
 #include "ex5.hpp"
 
-void menu(std::string opt1, std::string opt2, std::string opt3, std::string opt4, std::string opt5, std::string opt6, unsigned int& c) {
+void menu(std::string opt1, std::string opt2, std::string opt3, std::string opt4, std::string opt5, std::string opt6, unsigned int& c) { //menu de sélectibon
     std::cout << "1." << opt1 << std::endl
     << "2." << opt2 << std::endl
     << "3." << opt3 << std::endl
@@ -26,7 +26,7 @@ int main();
 void lauch(unsigned int a) {
     std::cout << std::endl;
 
-    switch (a)
+    switch (a) //Lance le programme correspondant à l'input
         {
         case 1:
             exo1::prog();

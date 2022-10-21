@@ -1,11 +1,11 @@
 #include <iostream>
 
-void askUser(std::string thing, unsigned int& a) {
+void askUser(std::string thing, unsigned int& a) { //Demande à l'utilisateur, passage par référence (unsigned int)
     std::cout << thing << " ?> ";
     std::cin >> a;
 }
 
-bool bissextile(unsigned int an) {
+bool bissextile(unsigned int an) { //Vérifie si l'année est bissextile
     if (an%400 == 0)
         return true;
     else if (an%100 == 0)

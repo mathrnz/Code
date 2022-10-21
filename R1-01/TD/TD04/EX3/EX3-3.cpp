@@ -1,6 +1,6 @@
 #include <iostream>
 
-double moy_Tab(const int tab[], size_t n) {
+double moy_Tab(const int tab[], size_t n) { //Fais la moyenne des nombres d'un tableau
     double somme=0;
     for(size_t i=0; i<n; i++)
         somme+=tab[i];

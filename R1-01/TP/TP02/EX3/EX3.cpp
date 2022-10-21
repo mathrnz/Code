@@ -1,11 +1,11 @@
 #include <iostream>
 
-void askUser(std::string thing, int& a) {
+void askUser(std::string thing, int& a) { //Demande à l'utilisateur, passage par référence (int)
 	std::cout << thing << " ?> ";
 	std::cin >> a;
 }
 
-bool minMaj(unsigned int jn, unsigned int mn, unsigned int an, unsigned int j, unsigned int m, unsigned int a) {
+bool minMaj(unsigned int jn, unsigned int mn, unsigned int an, unsigned int j, unsigned int m, unsigned int a) { //Vérifie si l'utilisateur est majeu ou mineur
 	if (a - an < 18)
 		return false;
 	else if (a - an > 18)
