@@ -1,4 +1,4 @@
-<p align="center>
+<p align="center">
 <img src="R1-01.png" width="200"/>
     
 # Code de la ressource R1.01
