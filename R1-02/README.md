@@ -3,4 +3,4 @@
     <h1 align="center">Code de la ressource R1-02</h1>
 </p>
 
-**Toute pull request sera appréciée**, surtout toi Lila qui a fini presque tous les TP en R1.02.
+**Toute pull request sera appréciée**, merci à Lila pour les TP.
