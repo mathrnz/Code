@@ -1,4 +1,4 @@
-//Usage : ./exectuble <valeurs.txt
+//Usage : ./executable <valeurs.txt
 
 #include <iostream>
 #include "../../../includes/CommonThings/commonthings.hpp"
