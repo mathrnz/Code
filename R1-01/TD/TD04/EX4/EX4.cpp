@@ -1,3 +1,34 @@
+/*
+Commencez par créer une structure PointChar avec trois attribues : un entier x, un entier y,
+et un caractère c, dans cette ordre. Réfléchissez plus tard pourquoi l’ordre est importante.
+2. Créez une fonction contains qui reçoit comme paramètres un tableau t de PointChar, sa
+taille n et deux entiers x0 et y0. Cette fonction renvoie un entier. Si t contient un elément
+t[i] tel que t[i].x = x0 et t[i].y = y0, alors on renvoie t[i].c. Sinon, on renvoie -1. Pourquoi on
+demande int et pas char ?
+3. En utilisant contains, écrivez une fonction display qui affiche le caractère correspondant à
+chaque case d’un tableau de PointChar pour x et y de 0 à size-1, où size est une constante
+égale à 24. Cette fonction n’utilise aucun autre tableau. Si on a les valeurs à gauche, on doit
+afficher l’image :
+ /\_/\
+( o.o )
+ > ^ <
+
+x y  c
+1 0 '/'
+2 0 '\\'
+3 0 '_'
+4 0 '/'
+5 0 '\\'
+0 1 '('
+2 1 'o'
+3 1 '.'
+4 1 'o'
+6 1 ')'
+1 2 '>'
+3 2 '^'
+5 2 '<'
+*/
+
 #include <iostream>
 
 struct PointChar { //coordonnées d'un point et caratère à placer à ce point

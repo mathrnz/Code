@@ -1,3 +1,8 @@
+/*
+Écrivez une fonction qui affiche tous les entiers du tableau séparés par virgule.
+ex : 13, 10, 2, 14
+*/
+
 #include <iostream>
 
 void printTab(const int tab[], size_t n) { //Attention, cet algo nécessite deux valeurs ! (risque underflow)

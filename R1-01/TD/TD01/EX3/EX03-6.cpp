@@ -1,9 +1,11 @@
-#include <iostream>
+/*
+Réécrire ce programme en utilisant les principes de programmation structurée vus en cours. 
+*/
 
-void askNum(std::string thing, int& _n) { //Demande un nombre
-    std::cout << thing << "?> ";
-    std::cin >> _n;
-}
+#include <iostream>
+#include "../../../includes/CommonThings/commonthings.hpp"
+
+namespace ui = commonthings::userinput;
 
 void magic(int& _n1,int& _n2) { //Tour de magie
     _n1 = _n1 + _n2;
@@ -19,9 +21,11 @@ void printNum(int _n1, int _n2) { //Affiche les variables
 
 int main() {
     int n1, n2;
-    askNum("n1", n1);
-    askNum("n2", n2);
+    ui::askUser(n1, "N1?");
+    ui::askUser(n2, "N2?");
+
     magic(n1, n2);
     printNum(n1, n2);
-    return 0;
+
+    return EXIT_SUCCESS;
 }

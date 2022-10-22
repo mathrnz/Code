@@ -1,3 +1,8 @@
+/*
+Écrivez une fonction qui supprime tous les éléments de valeur 0 du tableau.
+13, 0, 0, 10, 2, 0, 14, 0 → 13, 10, 2, 14
+*/
+
 #include <iostream>
 
 void removeZero(int val[], size_t& size) { //Retire les 0 d'un tableau
@@ -9,9 +14,4 @@ void removeZero(int val[], size_t& size) { //Retire les 0 d'un tableau
             val[write++]=val[read]; //Écrit la dernière valeur en train d'être lue dans un case libre (0)
     }
     size=write; //Ajuste la taille du tableau en fonction du nombre de 0 enlevés
-}
-
-int main() {
-
-    return EXIT_SUCCESS;
 }

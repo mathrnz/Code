@@ -1,8 +1,13 @@
-//Rectangle en charactère *
+/*
+Écrire un programme qui permet de dessiner : 
+ Un rectangle de l sur h. 
+Exemple pour l=4 et h=2 
+****↲ 
+****↲ 
+*/
 #include <iostream>
 
-void rectangle(int l, int L) { //Dessine une rectangle de l sur L dans la sortie standard
-
+void drawRectangle(int l, int L) { //Dessine une rectangle de l sur L dans la sortie standard
 	for (int j=1; j <= l; j++) {
 		for (int i=1; i <= L; i++) {
 			std::cout << "*";
@@ -12,5 +17,7 @@ void rectangle(int l, int L) { //Dessine une rectangle de l sur L dans la sortie
 }
 
 int main() {
-	rectangle(4, 5);
+	drawRectangle(4, 5);
+
+	return EXIT_SUCCESS;
 }

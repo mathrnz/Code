@@ -1,19 +1,29 @@
-//Indique si le nombre est nul, positif ou négatif
-#include <iostream>
+/*
+Écrire un programme dans lequel on demande un nombre à l'utilisateur et affiche si celui-ci est 
+positif, négatif ou nul 
+*/
 
-void ask(int& input) { //Demande à l'utilisateur
-    std::cout << "Entrez un nombre> ";
-    std::cin >> input;
+#include <iostream>
+#include "../../../includes/CommonThings/commonthings.hpp"
+
+namespace ui = commonthings::userinput;
+
+std::string testNum(int n) {
+    if (n == 0)
+        return "nul";
+    else if (n > 0)
+        return "positif";
+    else
+        return "négatif";
+    
+    return "NaN";
 }
 
 int main() {
     int n;
-    ask(n);
+    ui::askUser(n, "Entrez un nombre");
 
-    if (n == 0)
-        std::cout << "Le nombre est nul" << std::endl;
-    else if (n > 0)
-        std::cout << "Le nombre est positif";
-    else
-        std::cout << "Le nombre est négatif";
+    std::cout << "Le nombre est " << testNum(n) << std::endl;
+    
+    return EXIT_SUCCESS;
 }

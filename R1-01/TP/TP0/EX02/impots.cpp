@@ -3,12 +3,8 @@
 using namespace std;
 
 int main() {
-	const double plafond1 = 500;
-	const double plafond2 = 1200;
-	const double plafond3 = 1600;
-	const double taux1 = 0.15;
-	const double taux2 = 0.25;
-	const double taux3 = 0.30;
+	const double plafond1 = 500, plafond2 = 1200, plafond3 = 1600,
+				 taux1 = 0.15, taux2 = 0.25, taux3 = 0.30;
 
 	cout << "Revenu imposable de l'année précédente ? > ";
 	double revenu_imposable;
@@ -28,5 +24,6 @@ int main() {
 		}
 
 	cout << "L'impot dû est de : " << impot << endl;
-	return 0;
+	
+	return EXIT_SUCCESS;
 }

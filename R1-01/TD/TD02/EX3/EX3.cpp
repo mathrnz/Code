@@ -1,20 +1,24 @@
-//Demande l'age et indique si la personne est majeure ou mineure
+/*
+Ecrire un programme qui demande à un utilisateur de saisir son âge et affiche si celui-ci est 
+mineur ou majeur. 
+*/
 #include <iostream>
+#include "../../../includes/CommonThings/commonthings.hpp"
 
-void askUser(std::string thing, unsigned int& a) { //Demande à l'utilsateur
-    std::cout << thing << "?> ";
-    std::cin >> a;
-}
+namespace ui = commonthings::userinput;
 
-void minorMajor(int a) { //Test mineur ou majeur
+bool minorMajor(int a) { //Test mineur ou majeur (vrai si majeur)
     if (a >= 18)
-        std::cout << "Vous êtes majeur !";
+        return true;
     else
-        std::cout << "Vous êtes mineur !";
+        return false;
 }
 
 int main() {
     unsigned int age;
-    askUser("Age", age);
-    minorMajor(age);
+    ui::askUser(age, "Age?");
+    
+    std::cout << "Vous êtes " << ((minorMajor(age)?"majeur":"mineur")) << std::endl;
+
+    return EXIT_SUCCESS;
 }

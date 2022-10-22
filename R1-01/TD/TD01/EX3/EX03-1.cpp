@@ -1,3 +1,7 @@
+/*
+Pour chaque ligne du code précédent indiquez ce qu’elle fait
+*/
+
 #include <iostream> //inclue la bibliothèque iostream
 
 int main() { //fonction principale

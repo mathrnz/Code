@@ -1,22 +1,29 @@
+/*
+Écrire un programme dans lequel on lit un nombre et un intervalle et qui affiche si le nombre 
+est compris entre les deux bornes, bornes incluses.
+*/
+
 #include <iostream>
+#include "../../../includes/CommonThings/commonthings.hpp"
 
-void asksmth(std::string thing, int& t) { //Demande à l'utilisateur, passage par référence
-    std::cout << thing << "?> ";
-    std::cin >> t;
-}
+namespace ui = commonthings::userinput;
 
-void checkbornes(int b1, int b2, int nb) { //Vérifie si nb est compris entre b1 et b2
-    if (nb >= b1 && nb <= b2)
-        std::cout << "Le nombre est compris dans les bornes" << std::endl;
+bool checkbornes(int b1, int b2, int nb) { //Vérifie si nb est compris entre b1 et b2
+    if ((nb >= b1 && nb <= b2) || (nb >= b2 && nb <= b1))
+        return true;
     else 
-        std::cout << "Le nombre n'est pas compris dans les bornes" << std::endl;
+        return false;
+    
+    return false;
 }
 
 int main() {
     int borne1, borne2, nombre;
-    asksmth("Borne 1", borne1);
-    asksmth("Borne 2", borne2);
-    asksmth("Nombre", nombre);
+    ui::askUser(borne1, "Borne1");
+    ui::askUser(borne2, "Borne2");
+    ui::askUser(nombre, "Nombre");
+    
+    std::cout << "Le nombre " << ((checkbornes(borne1, borne2, nombre))?"est":"n'est pas") << " compris dans les bornes" << std::endl;
 
-    checkbornes(borne1, borne2, nombre);
+    return EXIT_SUCCESS;
 }

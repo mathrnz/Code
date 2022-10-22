@@ -1,3 +1,8 @@
+/*
+Écrivez une fonction qui renvoie la moyenne des éléments du tableau comme un double.
+13, 10, 2, 14 → 9.75
+*/
+
 #include <iostream>
 
 double moy_Tab(const int tab[], size_t n) { //Fais la moyenne des nombres d'un tableau
