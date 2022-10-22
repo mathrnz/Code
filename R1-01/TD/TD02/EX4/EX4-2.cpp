@@ -1,10 +1,15 @@
-//Teste la validité d'une date
-#include <iostream>
+/*
+Ecrire un programme qui demande à l’utilisateur une date et indique si cette date est valide. Dans cet 
+exercice on ne considèrera que des dates du calendrier Grégorien. Pour rappel, celui-ci ne comporte pas 
+d’année 0 et commence à l’année 1. Adopté en France en décembre 1582 le calendrier Grégorien est le 
+calendrier que vous utilisez tous les jours, autant dire que ça date... 
+Exemple : le 31/04/2020 n’est pas une date valide contrairement au 31/01/1910
+*/
 
-void askUser(std::string thing, unsigned int& a) { //Demande à l'utilisateur
-    std::cout << thing << "?> ";
-    std::cin >> a;
-}
+#include <iostream>
+#include "../../../includes/CommonThings/commonthings.hpp"
+
+namespace ui = commonthings::userinput;
 
 bool biOrNot(int d) { //Teste si une année est bissextile ou pas
     
@@ -18,7 +23,7 @@ bool biOrNot(int d) { //Teste si une année est bissextile ou pas
         return false;
 }
 
-void valid(int j, int m, int a) { //Teste la validité d'une année
+bool valid(unsigned int j, unsigned int m, unsigned int a) { //Teste la validité d'une année
     unsigned int nbjours=0;
     if (m == 1 || m == 3 || m == 5 || m == 7 || m == 10 || m == 12) //Mois à 31 jours
         nbjours = 31;
@@ -30,18 +35,18 @@ void valid(int j, int m, int a) { //Teste la validité d'une année
         nbjours = 28;
 
     if (j > nbjours)
-        std::cout << "Date invalide !" << std::endl;
+        return false;
     else 
-        std::cout << "Date valide !" << std::endl;
+        return true;
 }
 
 int main() {
     unsigned int jour, mois, année;
-    askUser("Jour", jour);
-    askUser("Mois", mois);
-    askUser("Année", année);
+    ui::askUser(jour, "Jour");
+    ui::askUser(mois, "Mois");
+    ui::askUser(année, "Année");
 
-    valid(jour, mois, année);
+    std::cout << "La date est " << ((valid(jour, mois, année))?"valide":"invalide") << std::endl;
 
-    return 0;
+    return EXIT_SUCCESS;
 }

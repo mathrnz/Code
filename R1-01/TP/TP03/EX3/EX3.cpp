@@ -1,69 +1,34 @@
+/*
+Implatation pratique du TD02
+Écrire directement le programme dans le style structuré.
+*/
+
 #include <iostream>
+#include "../../../includes/CommonThings/commonthings.hpp"
 
-void drawRectangle(unsigned int l, unsigned int L) { //Dessine un rectangle de l sur L dans la sortie standard
-    	for (int j=1; j <= l; j++) {
-            for (int i=1; i <= L; i++) {
-                std::cout << "*";
-            }
-		std::cout << std::endl;
-	}
-}
+namespace ui = commonthings::userinput;
 
-void drawTriangle(unsigned int L) { //Dessine un triangle L sur la sortie standard
-    for (int j=1; j <= L; j++) { //longueur
-		std::cout << "*";
+bool minMaj(unsigned int jn, unsigned int mn, unsigned int an, unsigned int j, unsigned int m, unsigned int a) { //Vérifie si l'utilisateur est majeu ou mineur
+	if (a - an < 18)
+		return false;
+	else if (a - an > 18)
+		return true;
+	else if ((a - an >= 18) && (m - mn >= 0) && (j - jn >= 0))
+		return true;
 
-		for (int i=1; i < j; i++) { //Largeur, augemente à chaque tour de la première boucle
-			std::cout << "*";
-		}
-
-		std::cout << std::endl;
-	}
-}
-
-void askUser(unsigned int& n, std::string thing) { //Demande à l'utilisateur, passage par référence (unsigned int)
-    std::cout << thing << "> ";
-    std::cin >> n;
-}
-
-void menu(unsigned int& c) { //Menu de sélection
-        std::cout << "Choississez une option :" << std::endl
-        << "1. Rectangle" << std::endl
-        << "2. Triangle" << std::endl
-        << "3. Quitter" << std::endl;
-        std::cin >> c;
-
-        switch(c) {
-            case 1:
-                unsigned int l, L;
-                askUser(l, "Longeur ?");
-                askUser(L, "Largeur");
-                drawRectangle(l, L);
-                break;
-            
-            case 2:
-                unsigned int h;
-                askUser(h, "Taille de triangle");
-                drawTriangle(h);
-                break;
-            
-            case 3:
-                break;
-
-            default:
-                std::cout << "Erreur: (" << c << ") Choix invalide" << std::endl;
-                break;
-
-        }
+	return false;
 }
 
 int main() {
-    unsigned int choice;
-    
-    do {
-        menu(choice);
-    } while (choice != 3);
+	int jn, mn, an, j, m, a;
+	ui::askUser(jn, "Jour de naissance");
+	ui::askUser(mn, "Mois de naissance");
+	ui::askUser(an, "Année de naissance");
+	ui::askUser(j, "Jour");
+	ui::askUser(m, "Mois");
+	ui::askUser(a, "Année");
 
+	std::cout << ((minMaj(jn, mn, an, j, m, a))?"majeur":"mineur") << std::endl;
 
-    return 0;
+	return EXIT_SUCCESS;
 }

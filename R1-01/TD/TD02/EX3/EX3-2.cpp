@@ -1,36 +1,38 @@
-//Demande la date de naissance et la date du jour, indique si la personne est majeure ou non
+/*
+Ecrire un programme dans lequel l’utilisateur saisi sa date de naissance (jour, mois et année) 
+ainsi que la date du jour. Comme précédemment, celui-ci devra afficher à l’utilisateur s’il est 
+mineur ou majeur.
+*/
+
 #include <iostream>
+#include "../../../includes/CommonThings/commonthings.hpp"
 
-void askUser(std::string thing, unsigned int& a) { //demande à l'utilisateur, passage par référence
-    std::cout << thing << "?> ";
-    std::cin >> a;
-}
+namespace ui = commonthings::userinput;
 
-
-void minorMajor(unsigned int jN, unsigned int mN, unsigned aN, unsigned int j, unsigned int m, unsigned int a) { //Test mineur ou majeur
-    if (a - aN >= 18)
-        if (m - mN >= 0)
-            if (j - jN >= 0)
-                std::cout << "Vous êtes majeur !" << std::endl;
-            else
-                std::cout << "Vous êtes mineur !" << std::endl;
-        else
-            std::cout << "Vous êtes mineur !" << std::endl;
-    else
-        std::cout << "Vous êtes mineur !" << std::endl;
+bool minorMajor(unsigned int jN, unsigned int mN, unsigned aN, unsigned int j, unsigned int m, unsigned int a) { //Test mineur ou majeur (vrai si majeur)
+    if (a - aN >= 18) {
+        if (m - mN > 0) {
+            return true;
+        } else if ((m - mN == 0) && (j - jN >= 0)) {
+            return true;
+        }
+    }
+    
+    return false;
 }
 
 int main() {
-    unsigned int jourN, moisN, annéeN, jour, mois, année;
-    askUser("Jour de naissance", jourN);
-    askUser("Mois de naissance", moisN);
-    askUser("Année de naissance", annéeN);
+    unsigned int jourN, moisN, annéeN;
+    ui::askUser(jourN, "Jour de naissance");
+    ui::askUser(moisN, "Mois de naissance");
+    ui::askUser(annéeN, "Année de naissance");
     
-    askUser("Jour d'aujourd'hui", jour);
-    askUser("Mois d'aujourd'hui", mois);
-    askUser("Année d'aujourd'hui", année);
+    unsigned int jour, mois, année;
+    ui::askUser(jour, "Jour d'aujourd'hui");
+    ui::askUser(mois, "Mois d'aujourd'hui");
+    ui::askUser(année, "Année d'aujourd'hui");
 
-    minorMajor(jourN, moisN, annéeN, jour, mois, année);
+    std::cout << "Vous êtes " << ((minorMajor(jourN, moisN, annéeN, jour, mois, année))?"majeur":"mineur") << std::endl;
 
-    return 0;
+    return EXIT_SUCCESS;
 }
