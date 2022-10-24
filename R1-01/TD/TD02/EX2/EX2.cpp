@@ -11,9 +11,7 @@ namespace ui = commonthings::userinput;
 bool checkbornes(int b1, int b2, int nb) { //Vérifie si nb est compris entre b1 et b2
     if ((nb >= b1 && nb <= b2) || (nb >= b2 && nb <= b1))
         return true;
-    else 
-        return false;
-    
+
     return false;
 }
 
