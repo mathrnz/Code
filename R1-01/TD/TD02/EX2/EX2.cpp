@@ -8,12 +8,7 @@ est compris entre les deux bornes, bornes incluses.
 
 namespace ui = commonthings::userinput;
 
-bool checkbornes(int b1, int b2, int nb) { //Vérifie si nb est compris entre b1 et b2
-    if ((nb >= b1 && nb <= b2) || (nb >= b2 && nb <= b1))
-        return true;
-
-    return false;
-}
+bool checkbornes(int b1, int b2, int nb) { return ((nb >= b1 && nb <= b2) || (nb >= b2 && nb <= b1)); } //Vérifie si nb est compris entre b1 et b2
 
 int main() {
     int borne1, borne2, nombre;
