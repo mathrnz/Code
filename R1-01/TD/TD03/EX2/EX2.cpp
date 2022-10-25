@@ -5,13 +5,14 @@ Rappel : le périmètre 𝑝 d’un cercle de rayon 𝑟 est définit par 𝑝=2
 */
 
 #include <iostream>
+#include <cmath>
 #include "../../../includes/CommonThings/commonthings.hpp"
 
 namespace ui = commonthings::userinput;
 
 double perimeter(double r) { //Calcule le périmètre
-	const double pi = 3.141592;
-	return 2 * pi * r;	
+	
+	return 2 * M_PI * r;	
 }
 
 int main() {
